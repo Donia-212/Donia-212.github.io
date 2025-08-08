@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donia Besher | Data Science Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            color: #fff;
+            margin: 0;
+        }
+        nav a {
+            color: #fff;
+            margin-left: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .intro {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: #ffffff;
+        }
+        .intro h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1rem;
+        }
+        .card-content h3 {
+            margin-top: 0;
+        }
+        .card-content p {
+            font-size: 0.95rem;
+        }
+        .card-content a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card-content a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Donia Besher</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about" class="intro">
+    <h2>Data Science & AI Portfolio</h2>
+    <p>I am a mathematics graduate specializing in Data Science for Artificial Intelligence, with research experience in probabilistic modeling, Bayesian time series forecasting, and ensemble learning. My work spans healthcare analytics, macroeconomic forecasting, and competition-winning machine learning models.</p>
+</section>
+
+<section id="projects">
+    <h2 style="text-align:center; padding: 1rem;">Recent Projects</h2>
+    <div class="projects">
+
+        <div class="card">
+            <img src="images/covid.jpg" alt="COVID-19 Mortality Analysis">
+            <div class="card-content">
+                <h3>Analysis of COVID-19 Mortality Data</h3>
+                <p>Probabilistic analysis to assess whether COVID-19 mortality data follows an exponential distribution, using statistical inference techniques for epidemic modeling.</p>
+                <a href="https://github.com/Donia-212/Analysis_of_COVID-19_Mortality_Data">Read more</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/climate.jpg" alt="Climate Policy Uncertainty Forecasting">
+            <div class="card-content">
+                <h3>Climate Policy Uncertainty Forecasting</h3>
+                <p>Forecasting US CPU index using Bayesian Structural Time Series with macro-financial indicators and sentiment data from Google Trends.</p>
+                <a href="https://github.com/Donia-212/Climate_Policy_Uncertainty_Forecasting">Read more</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/credit.jpg" alt="Credit Card Debt Prediction">
+            <div class="card-content">
+                <h3>Credit Card Debt Prediction</h3>
+                <p>Ensemble regression modeling approach that ranked 1st out of 30 participants in a Kaggle competition for predicting credit card debt.</p>
+                <a href="https://github.com/Donia-212/Credit-Card-Debt-Prediction">Read more</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/job.jpg" alt="Hiring Prediction">
+            <div class="card-content">
+                <h3>Will They Get the Job?</h3>
+                <p>Winning Kaggle solution tackling imbalanced data, missing values, and high-cardinality categorical features with ensemble and skew kernel methods.</p>
+                <a href="https://github.com/Donia-212/Will_They_Get_the_Job_Tackling_Imbalanced_Data_with_Ensemble_and_Skew_Kernel_Methods">Read more</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="intro">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/donia-ahmed">linkedin.com/in/donia-ahmed</a></p>
+</section>
+
+<footer>
+    <p>© 2025 Donia Besher</p>
+</footer>
+
+</body>
+</html>
