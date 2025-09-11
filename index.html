@@ -130,6 +130,32 @@
             flex: 1 1 300px; /* adjusts card width */
             max-width: 350px;
         }
+        .pub-software-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .pub-column, .software-column {
+            flex: 1 1 400px;
+            max-width: 500px;
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .pub-column h3, .software-column h3 {
+            margin-bottom: 1rem;
+        }
+        .pub-column ul, .software-column ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .pub-column li, .software-column li {
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -138,7 +164,8 @@
     <h1>Donia Besher</h1>
     <nav>
         <a href="#about">About</a>
-        <a href="#projects">Research and Projects</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications and Software</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -149,7 +176,7 @@
 </section>
 
 <section id="projects">
-    <h2 style="text-align:center; padding: 1rem;">Research and Projects Portfolio</h2>
+    <h2 style="text-align:center; padding: 1rem;">Projects Portfolio</h2>
 
     <!-- First row: top two projects -->
     <div class="projects-row">
@@ -211,30 +238,35 @@
 <section id="publications">
     <h2 style="text-align:center; padding: 1rem;">Publications and Research Software</h2>
 
-    <div class="publications">
-        <h3>Publications</h3>
-        <ul>
-            <li>
-                Chakraborty, T., Besher, D., Panja, M., Sengupta, S. (2025+) 
-                <strong>Neural ARFIMA Model for Forecasting BRIC Exchange Rates with Long Memory under Oil Shocks and Policy Uncertainties</strong>. 
-                Submitted. <a href="https://arxiv.org/abs/2509.06697" target="_blank" rel="noopener noreferrer">arXiv:2509.06697</a>
-            </li>
-            <li>
-                Besher, D., Sengupta, A., Chakraborty, T. (2025+) 
-                <strong>Forecasting Climate Policy Uncertainty: Evidence from the United States</strong>. 
-                Submitted. <a href="https://arxiv.org/abs/2507.12276" target="_blank" rel="noopener noreferrer">arXiv:2507.12276</a>
-            </li>
-        </ul>
-    </div>
+    <div class="pub-software-container">
+        <!-- Publications Column -->
+        <div class="pub-column">
+            <h3>Publications</h3>
+            <ul>
+                <li>
+                    Chakraborty, T., Besher, D., Panja, M., Sengupta, S. (2025+) 
+                    <strong>Neural ARFIMA Model for Forecasting BRIC Exchange Rates with Long Memory under Oil Shocks and Policy Uncertainties</strong>. 
+                    Submitted. <a href="https://arxiv.org/abs/2509.06697" target="_blank" rel="noopener noreferrer">arXiv:2509.06697</a>
+                </li>
+                <li>
+                    Besher, D., Sengupta, A., Chakraborty, T. (2025+) 
+                    <strong>Forecasting Climate Policy Uncertainty: Evidence from the United States</strong>. 
+                    Submitted. <a href="https://arxiv.org/abs/2507.12276" target="_blank" rel="noopener noreferrer">arXiv:2507.12276</a>
+                </li>
+            </ul>
+        </div>
 
-    <div class="software">
-        <h3>Research Software</h3>
-        <ul>
-            <li>
-                <strong>NARFIMA R Package</strong>: Developed an R package for time series forecasting using the NARFIMA model, which integrates neural networks with fractional differencing to capture nonlinear patterns and long-term dependencies. 
-                The package supports seasonal adjustment, Box-Cox transformations, exogenous variables, simulated prediction intervals, and benchmarking against alternative models (NARIMA, NBSTS, NNaive).
-            </li>
-        </ul>
+        <!-- Research Software Column -->
+        <div class="software-column">
+            <h3>Research Software</h3>
+            <ul>
+                <li>
+                    <strong>NARFIMA R Package</strong>: Developed an R package for time series forecasting using the NARFIMA model, which integrates neural networks with fractional differencing to capture nonlinear patterns and long-term dependencies. 
+                    Supports seasonal adjustment, Box-Cox transformations, exogenous variables, simulated prediction intervals, and benchmarking against alternative models (NARIMA, NBSTS, NNaive). 
+                    <a href="https://github.com/Donia-212/NARFIMA" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
     
