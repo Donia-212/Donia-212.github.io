@@ -156,6 +156,30 @@
             margin-bottom: 1rem;
             line-height: 1.5;
         }
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .about-text {
+            flex: 3 1 600px; /* 3/4 of the space */
+        }
+        .about-photo {
+            flex: 1 1 200px; /* 1/4 of the space */
+            display: flex;
+            justify-content: center;
+        }
+        .about-photo img {
+            max-width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -171,8 +195,21 @@
 </header>
 
 <section id="about" class="intro">
-    <h2>Data Science and Artificial Intelligence Portfolio</h2>
-    <p> Welcome to my portfolio! I am Donia Besher, a Sorbonne Mathematics graduate specializing in Data Science for Artificial Intelligence. My journey began with late nights solving math puzzles just for fun, but it quickly grew into a passion for uncovering hidden signals in complex data. Along the way, I have forecasted exchange rates, explored climate policy uncertainty, and learned that sometimes the most valuable insights come from models that don’t perform as expected. One of my favorite moments was watching my ranking swing wildly with every submission in Kaggle competitions, and finally hitting the top spot after countless tweaks. It shows that persistence, a bit of luck, and maybe some extra caffeine can matter more than perfect conditions. Small victories like that are what make me love this field: data science is as much about experimenting and bouncing back as it is about generating insights and solving problems. Looking ahead, I am excited to explore spatiotemporal modelling and contribute to more informed decision-making in uncertain environments.</p>
+    <h2 style="text-align:center; padding: 1rem;">Data Science and Artificial Intelligence Portfolio</h2>
+    
+    <div class="about-container">
+        <!-- Left column: Text -->
+        <div class="about-text">
+            <p>
+                Welcome to my portfolio! I am Donia Besher, a Sorbonne Mathematics graduate specializing in Data Science for Artificial Intelligence. My journey began with late nights solving math puzzles just for fun, but it quickly grew into a passion for uncovering hidden signals in complex data. Along the way, I have forecasted exchange rates, explored climate policy uncertainty, and learned that sometimes the most valuable insights come from models that don’t perform as expected. One of my favorite moments was watching my ranking swing wildly with every submission in Kaggle competitions, and finally hitting the top spot after countless tweaks. It shows that persistence, a bit of luck, and maybe some extra caffeine can matter more than perfect conditions. Small victories like that are what make me love this field: data science is as much about experimenting and bouncing back as it is about generating insights and solving problems. Looking ahead, I am excited to explore spatiotemporal modelling and contribute to more informed decision-making in uncertain environments.
+            </p>
+        </div>
+
+        <!-- Right column: Photo -->
+        <div class="about-photo">
+            <img src="images/donia.jpg" alt="Donia Besher" />
+        </div>
+    </div>
 </section>
 
 <section id="projects">
@@ -263,7 +300,7 @@
                 <li>
                     <strong>NARFIMA R Package</strong>: Developed an R package for time series forecasting using the NARFIMA model, which integrates neural networks with fractional differencing to capture nonlinear patterns and long-term dependencies. 
                     Supports seasonal adjustment, Box-Cox transformations, exogenous variables, simulated prediction intervals, and benchmarking against alternative models (NARIMA, NBSTS, NNaive). 
-                    <a href="https://github.com/Donia-212/NARFIMA" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    <!-- <a href="https://github.com/Donia-212/NARFIMA" target="_blank" rel="noopener noreferrer">View on GitHub</a> -->
                 </li>
             </ul>
         </div>
