@@ -134,7 +134,7 @@
 
 <section id="about" class="intro">
     <h2>Data Science and Artificial Intelligence Portfolio</h2>
-    <p>I am a Mathematics graduate from Sorbonne University, specializing in Data Science for Artificial Intelligence. My passion lies in applying advanced analytics and machine learning to uncover insights from complex data and support data-driven decision making. My journey into data science began with a love for problem-solving and has evolved into a deep interest in how AI can be applied across fields like healthcare, economics, and sustainability. I see data science not just as a technical skill but as a powerful tool for understanding complex systems and making informed decisions. I have applied these tools to both academic research and practical projects, developing ensemble models that achieved top rankings in Kaggle competitions and contributing to research on forecasting exchange rates and climate policy uncertainty. Looking ahead, I aim to explore how AI can enhance decision-making in healthcare, from improving diagnostic tools to enabling more personalized and accessible treatment options.</p>
+    <p> Welcome to my portfolio! I am Donia Besher, a Sorbonne Mathematics graduate specializing in Data Science for Artificial Intelligence. My journey began with late nights solving math puzzles just for fun, but it quickly grew into a passion for uncovering hidden signals in complex data. Along the way, I have forecasted exchange rates, explored climate policy uncertainty, and learned that sometimes the most valuable insights come from models that don’t perform as expected. One of my favorite moments was watching my ranking swing wildly with every submission in Kaggle competitions, and finally hitting the top spot after countless tweaks. It shows that persistence, a bit of luck, and maybe some extra caffeine can matter more than perfect conditions. Small victories like that are what make me love this field: data science is as much about experimenting and bouncing back as it is about generating insights and solving problems. Looking ahead, I am excited to explore spatiotemporal modelling and contribute to more informed decision-making in uncertain environments.</p>
 </section>
 
 <section id="projects">
@@ -142,12 +142,22 @@
     <div class="projects">
 
         <div class="card">
+            <img src="images/exchange_rates.jpg" alt="NARFIMA Exchange Rate Forecasting">
+            <div class="card-content">
+            <h3>Exchange Rate Forecasting</h3>
+            <p>Developed the NARFIMA (Neural AutoRegressive Fractionally Integrated Moving Average) model to forecast exchange rates of BRIC economies. NARFIMA integrates neural networks with fractional differencing to capture nonlinear patterns and long-term dependencies in financial time series.</p>
+            <a href="https://github.com/mad-stat/NARFIMA" target="_blank" rel="noopener noreferrer">View the Exchange Rate Forecasting Project</a>
+            <a href="https://arxiv.org/abs/2509.06697" target="_blank" rel="noopener noreferrer">Read the Exchange Rate Forecasting Paper</a>
+        </div>
+    </div>
+
+        <div class="card">
             <img src="images/climate.jpg" alt="Climate Policy Uncertainty Forecasting">
             <div class="card-content">
                 <h3>Climate Policy Uncertainty Forecasting</h3>
                 <p>Investigated drivers of the US Climate Policy Uncertainty index using macroeconomic, financial cycle variables, and real-time public sentiment data to improve forecasting.</p>
-                <a href="https://github.com/Donia-212/Climate_Policy_Uncertainty_Forecasting" target="_blank" rel="noopener noreferrer">Read the Climate Policy Forecasting Project</a> |
-                <a href="https://arxiv.org/abs/2507.12276" target="_blank" rel="noopener noreferrer">View the Climate Policy Forecasting Paper</a>
+                <a href="https://github.com/Donia-212/Climate_Policy_Uncertainty_Forecasting" target="_blank" rel="noopener noreferrer">View the Climate Policy Forecasting Project</a> |
+                <a href="https://arxiv.org/abs/2507.12276" target="_blank" rel="noopener noreferrer">Read the Climate Policy Forecasting Paper</a>
             </div>
         </div>
 
@@ -183,6 +193,28 @@
 
     </div>
 </section>
+
+<section id="publications">
+    <h2 style="text-align:center; padding: 1rem;">Publications and Research Software</h2>
+
+    <div class="publication">
+        <h3>Publications</h3>
+        <ul>
+            <li>Chakraborty, T., Besher, D., Panja, M., Sengupta, S. (2025+) Neural ARFIMA Model for Forecasting BRIC Exchange Rates with Long Memory under Oil Shocks and Policy Uncertainties. Submitted. <a href="https://arxiv.org/abs/2509.06697" target="_blank" rel="noopener noreferrer">arXiv:2509.06697</a></li>
+            <li>Besher, D., Sengupta, A., Chakraborty, T. (2025+) Forecasting Climate Policy Uncertainty: Evidence from the United States. Submitted. <a href="https://arxiv.org/abs/2507.12276" target="_blank" rel="noopener noreferrer">arXiv:2507.12276</a></li>
+        </ul>
+    </div>
+
+    <div class="software">
+        <h3>Research Software</h3>
+        <ul>
+            <li>
+                <strong>NARFIMA R Package:</strong> Developed an R package for time series forecasting using the NARFIMA model, which integrates neural networks with fractional differencing to capture nonlinear patterns and long-term dependencies. The package supports seasonal adjustment, Box-Cox transformations, exogenous variables, simulated prediction intervals, and benchmarking against alternative models (NARIMA, NBSTS, NNaive).
+            </li>
+        </ul>
+    </div>
+</section>
+    
 
 <section id="contact" class="intro">
   <h2>Contact</h2>
