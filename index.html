@@ -119,6 +119,17 @@
         .icon-link:hover {
             text-decoration: underline;
         }     
+        .projects-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .projects-row .card {
+            flex: 1 1 300px; /* adjusts card width */
+            max-width: 350px;
+        }
     </style>
 </head>
 <body>
@@ -139,17 +150,18 @@
 
 <section id="projects">
     <h2 style="text-align:center; padding: 1rem;">Research and Projects Portfolio</h2>
-    <div class="projects">
 
+    <!-- First row: top two projects -->
+    <div class="projects-row">
         <div class="card">
             <img src="images/exchange_rates.jpg" alt="NARFIMA Exchange Rate Forecasting">
             <div class="card-content">
-            <h3>Exchange Rate Forecasting</h3>
-            <p>Developed the NARFIMA (Neural AutoRegressive Fractionally Integrated Moving Average) model to forecast exchange rates of BRIC economies. NARFIMA integrates neural networks with fractional differencing to capture nonlinear patterns and long-term dependencies in financial time series.</p>
-            <a href="https://github.com/mad-stat/NARFIMA" target="_blank" rel="noopener noreferrer">View the Exchange Rate Forecasting Project</a>
-            <a href="https://arxiv.org/abs/2509.06697" target="_blank" rel="noopener noreferrer">Read the Exchange Rate Forecasting Paper</a>
+                <h3>Exchange Rate Forecasting</h3>
+                <p>Developed the NARFIMA (Neural AutoRegressive Fractionally Integrated Moving Average) model to forecast exchange rates of BRIC economies. NARFIMA integrates neural networks with fractional differencing to capture nonlinear patterns and long-term dependencies in financial time series.</p>
+                <a href="https://github.com/mad-stat/NARFIMA" target="_blank" rel="noopener noreferrer">View the Exchange Rate Forecasting Project</a>
+                <a href="https://arxiv.org/abs/2509.06697" target="_blank" rel="noopener noreferrer">Read the Exchange Rate Forecasting Paper</a>
+            </div>
         </div>
-    </div>
 
         <div class="card">
             <img src="images/climate.jpg" alt="Climate Policy Uncertainty Forecasting">
@@ -160,7 +172,10 @@
                 <a href="https://arxiv.org/abs/2507.12276" target="_blank" rel="noopener noreferrer">Read the Climate Policy Forecasting Paper</a>
             </div>
         </div>
+    </div>
 
+    <!-- Second row: last three projects -->
+    <div class="projects-row">
         <div class="card">
             <img src="images/job.png" alt="Hiring Prediction">
             <div class="card-content">
@@ -190,7 +205,6 @@
                 <a href="files/COVID-19.pptx" download>Download Analysis of COVID-19 Mortality Data PPTX</a> 
             </div>
         </div>
-
     </div>
 </section>
 
