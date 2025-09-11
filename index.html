@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donia Besher | Data Science Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             background-color: #f9f9f9;
             color: #333;
@@ -181,8 +182,13 @@
             flex: 3 1 600px; /* 3/4 of the space */
         }
         .about-text p {
-            text-align: justify;
+            text-align: left; /* left-aligned text */
             line-height: 1.6;
+            margin: 0 0 1rem 0; /* space between paragraphs */
+        }
+        .about-text p:first-child {
+            font-weight: 600; /* bold */
+            font-size: 1.2rem;
         }
     </style>
 </head>
@@ -209,8 +215,9 @@
 
         <!-- Right column: Text -->
         <div class="about-text">
+            <p><strong>Welcome to my portfolio!</strong></p>
             <p>
-                Welcome to my portfolio! I am Donia Besher, a Sorbonne Mathematics graduate specializing in Data Science for Artificial Intelligence. My journey began with late nights solving math puzzles just for fun, but it quickly grew into a passion for uncovering hidden signals in complex data. Along the way, I have forecasted exchange rates, explored climate policy uncertainty, and learned that sometimes the most valuable insights come from models that don’t perform as expected. One of my favorite moments was watching my ranking swing wildly with every submission in Kaggle competitions, and finally hitting the top spot after countless tweaks. It shows that persistence, a bit of luck, and maybe some extra caffeine can matter more than perfect conditions. Small victories like that are what make me love this field: data science is as much about experimenting and bouncing back as it is about generating insights and solving problems. Looking ahead, I am excited to explore spatiotemporal modelling and contribute to more informed decision-making in uncertain environments.
+                I am Donia Besher, a Sorbonne Mathematics graduate specializing in Data Science for Artificial Intelligence. My journey began with late nights solving math puzzles just for fun, but it quickly grew into a passion for uncovering hidden signals in complex data. Along the way, I have forecasted exchange rates, explored climate policy uncertainty, and learned that sometimes the most valuable insights come from models that don’t perform as expected. One of my favorite moments was watching my ranking swing wildly with every submission in Kaggle competitions, and finally hitting the top spot after countless tweaks. It shows that persistence, a bit of luck, and maybe some extra caffeine can matter more than perfect conditions. Small victories like that are what make me love this field: data science is as much about experimenting and bouncing back as it is about generating insights and solving problems. Looking ahead, I am excited to explore spatiotemporal modelling and contribute to more informed decision-making in uncertain environments.
             </p>
         </div>
     </div>
