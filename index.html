@@ -211,7 +211,7 @@
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#publications">Publications and Software</a>
+        <a href="#publications">Publications and Open Source Packages</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -228,7 +228,10 @@
         <!-- Right column: Text -->
         <div class="about-text">
             <p><strong>Welcome to my Portfolio!</strong></p>
-            <p>I am Donia Besher, an MS/PhD student in Statistics (Data Science Track) at KAUST, supervised by Prof. Raphaël Huser, and a Sorbonne Mathematics graduate. My research interests lie at the intersection of machine learning, probabilistic forecasting, and spatiotemporal modelling. My journey began with late nights solving math puzzles just for fun, but it quickly grew into a passion for uncovering hidden signals in complex data. Along the way, I have forecasted exchange rates, explored climate policy uncertainty, and learned that sometimes the most valuable insights come from models that don’t perform as expected. One of my favorite moments was watching my ranking swing wildly with every submission in Kaggle competitions, and finally hitting the top spot after countless tweaks. It shows that persistence, a bit of luck, and maybe some extra caffeine can matter more than perfect conditions. Small victories like that are what make me love this field: data science is as much about experimenting and bouncing back as it is about generating insights and solving problems. Looking ahead, I am excited to explore spatiotemporal modelling and contribute to more informed decision-making in uncertain environments.</p>
+            <p>I am Donia Besher, an MS/PhD student in Statistics (Data Science Track) at KAUST, supervised by Prof. Raphaël Huser, and a Sorbonne Mathematics graduate. My research interests lie at the intersection of machine learning, probabilistic forecasting, and spatiotemporal modelling. </p> 
+            <p>My journey began with late nights solving math puzzles just for fun, but it quickly grew into a passion for uncovering hidden signals in complex data. Along the way, I have forecasted exchange rates, explored climate policy uncertainty, and learned that sometimes the most valuable insights come from models that don’t perform as expected.</p> 
+            <p>One of my favorite moments was watching my ranking swing wildly with every submission in Kaggle competitions, and finally hitting the top spot after countless tweaks. It shows that persistence, a bit of luck, and maybe some extra caffeine can matter more than perfect conditions.</p> 
+            <p>Small victories like that are what make me love this field: data science is as much about experimenting and bouncing back as it is about generating insights and solving problems. Looking ahead, I am excited to explore spatiotemporal modelling and contribute to more informed decision-making in uncertain environments.</p>
         </div>
     </div>
 </section>
@@ -236,24 +239,18 @@
 <section id="projects">
     <h2 style="text-align:center; padding: 1rem;">Projects Portfolio</h2>
 
-    <div class="card">
-    <img src="images/genformer.jpg" alt="Genformer Probabilistic Forecasting">
-
-    <div class="card-content">
-        <h3>Deep Generative Transformers for Probabilistic Forecasting</h3>
-
-        <p>
-        Developed GEnformer, a lightweight, deep generative Transformer framework that integrates graph convolutions, stochastic noise injection, and Energy Score optimization to capture complex spatiotemporal dependencies for probabilistic forecasting.
-        </p>
-
-        <a href="https://genformer.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">
-        View the Genformer Package
-        </a>
-    </div>
- </div>
-
     <!-- First row: top two projects -->
     <div class="projects-row">
+        <div class="card">
+        <img src="images/genformer.jpg" alt="Genformer Probabilistic Forecasting">
+
+        <div class="card-content">
+            <h3>Deep Generative Transformers for Probabilistic Forecasting</h3>
+            <p>Developed GEnformer, a lightweight, deep generative Transformer framework that integrates graph convolutions, stochastic noise injection, and Energy Score optimization to capture complex spatiotemporal dependencies for probabilistic forecasting.</p>
+            <a href="https://genformer.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">View the Genformer Package</a>
+            </div>
+         </div>
+
         <div class="card">
             <img src="images/exchange_rates.jpg" alt="NARFIMA Exchange Rate Forecasting">
             <div class="card-content">
@@ -341,7 +338,7 @@
                     <img src="https://img.shields.io/pepy/dt/genformer?label=PyPI%20downloads"
                          alt="PyPI total downloads">
                     :
-                    PyTorch framework implementing lightweight deep generative Transformer architectures (Enformer and GEnformer) for probabilistic multivariate time series and spatiotemporal forecasting.
+                    PyTorch-based Python package for lightweight, deep generative Transformer-based probabilistic forecasting, implementing the Enformer and GEnformer architectures for multivariate time series and spatiotemporal data.
                 </li>
                 <li>
                     <a href="https://cran.r-project.org/web/packages/narfima/index.html" target="_blank" rel="noopener noreferrer">
@@ -350,8 +347,7 @@
                     <img src="https://cranlogs.r-pkg.org/badges/grand-total/narfima" 
                          alt="CRAN downloads">
                     : 
-                    Developed an R package for time series forecasting using the NARFIMA model, which integrates neural networks with fractional differencing to capture nonlinear patterns and long-term dependencies. 
-                    Supports seasonal adjustment, Box-Cox transformations, exogenous variables, simulated prediction intervals, and benchmarking against alternative models (NARIMA, NBSTS, NNaive). 
+                    R package for forecasting time series exhibiting both nonlinear dynamics and long memory behavior, with support for exogenous variables, preprocessing, uncertainty quantification, and benchmarking.
                     <!-- <a href="https://github.com/Donia-212/NARFIMA" target="_blank" rel="noopener noreferrer">View on GitHub</a> -->
                 </li>
             </ul>
